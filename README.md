@@ -12,4 +12,4 @@ PROYECTO SENPAI JULIO 2023
 
 -Para el layout de la página usaremos FlexBox como principal.
 
--No se usará ningún framework.
+-De ser necesario se usará Framework.
