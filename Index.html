@@ -2,62 +2,178 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
 </head>
 
-<body>
+<body class="container-lg">
+  <nav id="navBarPos" class="navbar navbar-expand-sm navbar-light bg-light">
+    <img src="./Materiales/flex-ui-green-light.svg" alt="" />
+    <button id="navbarToggle" class="navbar-toggler" type="button" data-toggle="collapse"
+      data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav" id="optionNav">
+        <a class="nav-item nav-link active" href="#">Producto</a>
+        <a class="nav-item nav-link" href="#">Características</a>
+        <a class="nav-item nav-link" href="#">Precios</a>
+      </div>
+      <div class="float-end" id="btnPosition">
+        <button>Ingresar</button>
+        <button>Registrarse</button>
+      </div>
+    </div>
+  </nav>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <img src="./Materiales/flex-ui-green-light.svg" alt="">
-        <button id="navbarToggle" class="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#">Features</a>
-                <a class="nav-item nav-link" href="#">Pricing</a>
-                <a class="nav-item nav-link disabled" href="#">Disabled</a>
-            </div>
+  <article id="marginArticle" class="container">
+    <div class="row">
+      <div class="col-6">
+        <p>NUEVO</p>
+
+        <h1>La plataforma para las empresas del futuro</h1>
+        <br />
+        <p>Productos pensados para los negocios del próximo siglo</p>
+        <br />
+        <div>
+          <button>Solicitar Demo</button> <button>Registrarse</button>
         </div>
-    </nav>
+      </div>
+      <div id="imgContainer" class="col-6">
+        <img id="headerJpg" src="/Materiales/header.jpg" alt="" />
+        <div id="imgDetails1">
+          <img src="/Materiales/circle3-yellow.svg" alt="" />
+        </div>
+        <div id="imgDetails2">
+          <img src="/Materiales/dots3-blue.svg" alt="" />
+        </div>
+      </div>
+    </div>
+  </article>
 
-    <article>
+  <main id="marginMain">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div id="iconsMainSize" class="col-4 d-flex justify-content-center align-items-center flex-column">
+          <div class="iconsMain d-flex justify-content-center">
+            <img src="/Materiales/mail-icon.svg" alt="" />
+          </div>
+          <div class="d-flex align-items-center flex-column">
+            <h4>Capacitación</h4>
+            <p class="text-center">Asistencia y capacitación de primer nivel</p>
+          </div>
+        </div>
+        <div id="iconsMainSize" class="col-4 d-flex justify-content-center align-items-center flex-column">
+          <div class="iconsMain d-flex justify-content-center">
+            <img src="/Materiales/analytics-icon.svg" alt="" />
+          </div>
+          <div class="d-flex align-items-center flex-column">
+            <h4>Analíticas claras</h4>
+            <p class="text-center">Disfruta de un dashboard de analíticas claras y
+              accionables</p>
+          </div>
+        </div>
+        <div id="iconsMainSize" class="col-4 d-flex justify-content-center align-items-center flex-column">
+          <div class="iconsMain d-flex justify-content-center">
+            <img src="/Materiales/people-icon.svg" alt="" />
+          </div>
+          <div class="d-flex align-items-center flex-column">
+            <h4>Soluciones para equipos</h4>
+            <p class="text-center">Facilita el accionar de tu empresa con nuestra suite de herramientas</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    </article>
+    <section id="sectionMargin">
+      <h1>Precios flexibles que escalan contigo</h1>
+      <p>Nuestra facturación se ajusta al tamaño de tu empresa. Tiempo de prueba de 7 días en todos nuestros planes.</p>
+    </section>
 
-    <main>
+    <div id="price" class="container row justify-content-between">
+      <div class="priceSize col-4 d-flex justify-content-center align-items-center flex-column">
+        <p>Precio</p>
+        <p>Plan básico</p>
+        <h1><sup>$</sup> 10/mes</h1>
+        <p>Facturado anualmente</p>
+        <ol class="customList">
+          <li>1GB de almacenamiento</li>
+          <li>Dashboard completo</li>
+          <li>Asistencia por correo</li>
+          <li>Hasta 10 miembros</li>
+          <button>Solicitar demo</button>
+        </ol>
+      </div>
+      <div class="priceSize col-4 d-flex justify-content-center align-items-center flex-column">
+        <p>Precio</p>
+        <p>Plan básico</p>
+        <h1><sup>$</sup> 10/mes</h1>
+        <p>Facturado anualmente</p>
+        <ol class="customList">
+          <li>1GB de almacenamiento</li>
+          <li>Dashboard completo</li>
+          <li>Asistencia por correo</li>
+          <li>Hasta 10 miembros</li>
+          <button>Solicitar demo</button>
+        </ol>
+      </div>
+      <div class="priceSize col-4 d-flex justify-content-center align-items-center flex-column">
+        <p>Precio</p>
+        <p>Plan básico</p>
+        <h1><sup>$</sup> 10/mes</h1>
+        <p>Facturado anualmente</p>
+        <ol class="customList">
+          <li>1GB de almacenamiento</li>
+          <li>Dashboard completo</li>
+          <li>Asistencia por correo</li>
+          <li>Hasta 10 miembros</li>
+          <button>Solicitar demo</button>
+        </ol>
+      </div>
+    </div>
 
-    </main>
+  </main>
 
-    <footer>
+  <footer>
+    <div class="d-flex justify-content-center">
+      <img id="whiteLogo" src="./Materiales/logo-senpai-blanco.svg" alt="">
+    </div>
+    <ul class="customListFooter d-flex justify-content-center">
+      <li>Producto</li>
+      <li>Funcionalidades</li>
+      <li>Precios</li>
+      <li>Recursos</li>
+      <li>Carreras</li>
+      <li>Ayuda</li>
+      <li>Privacidad</li>
+    </ul>
+    <hr class="hrFooter">
+    <div>
+      <p class="textFooter d-flex justify-content-center">&copy 2022 Flex. Un producto ficticio de Senpai.</p>
+    </div>
+  </footer>
 
-    </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
+  <script>
+    const navbarToggle = document.getElementById("navbarToggle");
+    const navbarNavAltMarkup = document.getElementById("navbarNavAltMarkup");
 
-    <script>
-        const navbarToggle = document.getElementById("navbarToggle")
-        const navbarNavAltMarkup = document.getElementById("navbarNavAltMarkup")
-
-        navbarToggle.addEventListener("click", () => {
-            if (navbarNavAltMarkup.classList.contains("show")) {
-                navbarNavAltMarkup.classList.remove("show");
-            } else {
-                navbarNavAltMarkup.classList.add("show");
-            }
-        });
-    </script>
-
+    navbarToggle.addEventListener("click", () => {
+      if (navbarNavAltMarkup.classList.contains("show")) {
+        navbarNavAltMarkup.classList.remove("show");
+      } else {
+        navbarNavAltMarkup.classList.add("show");
+      }
+    });
+  </script>
 </body>
 
 </html>
