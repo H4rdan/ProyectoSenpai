@@ -23,24 +23,30 @@
   right: 20px;
 }
 
-#imgContainer {
+#rightContainer {
   position: relative;
+}
+
+#imgContainer {
+  position: absolute;
+  bottom: -100px;
 }
 
 #imgDetails1 {
   position: absolute;
-  top: 0;
-  left: 0;
+  bottom: 345px;
+  right: 420px;
 }
 
 #imgDetails2 {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  top: 360px;
+  left: 380px;
 }
 
 #headerJpg {
   width: 500px;
+  margin-left: auto;
 }
 
 .iconsMain {
@@ -56,7 +62,7 @@
 }
 
 #marginMain {
-  margin-top: 130px;
+  margin-top: 200px;
 }
 
 #marginArticle {
