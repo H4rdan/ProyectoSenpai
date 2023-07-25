@@ -1,75 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body class="container-lg">
-    <nav id="navBarPos" class="navbar navbar-expand-sm navbar-light bg-light">
-      <img src="./Materiales/flex-ui-green-light.svg" alt="" />
-      <button
-        id="navbarToggle"
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav" id="optionNav">
-          <a class="nav-item nav-link active" href="#">Producto</a>
-          <a class="nav-item nav-link" href="#">Características</a>
-          <a class="nav-item nav-link" href="#">Precios</a>
-        </div>
-        <div class="float-end" id="btnPosition">
-          <button class="buttonStyle">Ingresar</button>
-          <button class="buttonStyle2">Registrarse</button>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet" /> -->
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" /> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Poppins:wght@200;400;500&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <nav id="navBarPos" class="navbar navbar-expand-sm navbar-light">
+    <img src="./Materiales/flex-ui-green-light.svg" alt="" />
+    <button id="navbarToggle" class="navbar-toggler" type="button" data-toggle="collapse"
+      data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav" id="optionNav">
+        <a class="nav-item nav-link active" href="#">Producto</a>
+        <a class="nav-item nav-link" href="#">Características</a>
+        <a class="nav-item nav-link" href="#">Precios</a>
       </div>
-    </nav>
+      <div class="float-end" id="btnPosition">
+        <button type="button" class="buttonStyle2" data-bs-toggle="modal"
+          data-bs-target="#exampleModal">Ingresar</button>
+        <button class="buttonStyle">Registrarse</button>
+      </div>
+    </div>
+  </nav>
+  <div class="container-lg">
 
-    <article id="marginArticle" class="container">
-      <div class="row">
+
+    <article id="marginArticle" class="">
+      <div class="d-flex justify-content-around">
         <div class="col-6">
-          <p>NUEVO</p>
+          <p class="priceGreen2">NUEVO</p>
 
           <h1>La plataforma para las empresas del futuro</h1>
           <br />
           <p>Productos pensados para los negocios del próximo siglo</p>
           <br />
           <div>
-            <button class="buttonStyle">Solicitar Demo</button>
+            <button class="buttonStyle4">Solicitar Demo</button>
             <button class="buttonStyle3">Registrarse</button>
           </div>
         </div>
@@ -89,11 +76,8 @@
 
     <main id="marginMain">
       <div class="container">
-        <div class="row justify-content-between">
-          <div
-            id="iconsMainSize"
-            class="col-4 d-flex justify-content-center align-items-center flex-column"
-          >
+        <div class="row justify-content-around">
+          <div id="iconsMainSize" class=" col-xl-3 col-12 d-flex justify-content-center align-items-center flex-column">
             <div class="iconsMain d-flex justify-content-center">
               <img src="/Materiales/mail-icon.svg" alt="" />
             </div>
@@ -104,10 +88,7 @@
               </p>
             </div>
           </div>
-          <div
-            id="iconsMainSize"
-            class="col-4 d-flex justify-content-center align-items-center flex-column"
-          >
+          <div id="iconsMainSize" class=" col-xl-3 col-12 d-flex justify-content-center align-items-center flex-column">
             <div class="iconsMain d-flex justify-content-center">
               <img src="/Materiales/analytics-icon.svg" alt="" />
             </div>
@@ -118,10 +99,7 @@
               </p>
             </div>
           </div>
-          <div
-            id="iconsMainSize"
-            class="col-4 d-flex justify-content-center align-items-center flex-column"
-          >
+          <div id="iconsMainSize" class=" col-xl-3 col-12 d-flex justify-content-center align-items-center flex-column">
             <div class="iconsMain d-flex justify-content-center">
               <img src="/Materiales/people-icon.svg" alt="" />
             </div>
@@ -144,12 +122,10 @@
         </p>
       </section>
 
-      <div id="price" class="container row justify-content-between">
-        <div
-          class="priceSize col-4 d-flex justify-content-center align-items-center flex-column"
-        >
-          <p>Precio</p>
-          <p>Plan básico</p>
+      <div id="price" class="row justify-content-around">
+        <div class="priceSize col-xl-3 col-12 d-flex justify-content-center align-items-center flex-column">
+          <p class="priceGreen">PRECIO</p>
+          <p class="planGreen">Plan básico</p>
           <p class="priceText"><sup>$</sup> 10/mes</p>
           <p>Facturado anualmente</p>
           <ol class="customList">
@@ -157,15 +133,14 @@
             <li>Dashboard completo</li>
             <li>Asistencia por correo</li>
             <li>Hasta 10 miembros</li>
-            <div  class=" buttonPrice d-flex justify-content-center align-items-center">
-              <button class="buttonStyle">Solicitar demo</button></div>
+            <div class=" buttonPrice d-flex justify-content-center align-items-center">
+              <button class="buttonStyle5">Solicitar demo</button>
+            </div>
           </ol>
         </div>
-        <div
-          class="priceSize col-4 d-flex justify-content-center align-items-center flex-column"
-        >
-          <p>Precio</p>
-          <p>Plan freelancer</p>
+        <div class="priceSize col-xl-3 col-12 d-flex justify-content-center align-items-center flex-column">
+          <p class="priceGreen">PRECIO</p>
+          <p class="planGreen">Plan freelancer</p>
           <p class="priceText"><sup>$</sup> 99/mes</p>
           <p>Facturado anualmente</p>
           <ol class="customList">
@@ -173,15 +148,14 @@
             <li>Asistencia profesional</li>
             <li>100GB de almacenamiento</li>
             <li>Hasta 100 miembros</li>
-            <div class=" buttonPrice d-flex justify-content-center align-items-center">
-              <button class="buttonStyle">Solicitar demo</button></div>
+            <div class="buttonPrice d-flex justify-content-center align-items-center">
+              <button class="buttonStyle5">Solicitar demo</button>
+            </div>
           </ol>
         </div>
-        <div
-        class="priceSize col-4 d-flex justify-content-center align-items-center flex-column"
-        >
-          <p>Precio</p>
-          <p>Plan empresas</p>
+        <div class="priceSize col-xl-3 col-12 d-flex justify-content-center align-items-center flex-column">
+          <p class="priceGreen">PRECIO</p>
+          <p class="planGreen">Plan empresas</p>
           <p class="priceText"><sup>$</sup> 799/mes</p>
           <p>Facturado anualmente</p>
           <ol class="customList">
@@ -190,50 +164,90 @@
             <li>Asistencia telefónica 24/7</li>
             <li>Miembros ilimitados</li>
             <div class="buttonPrice d-flex justify-content-center align-items-center">
-            <button class="buttonStyle">Solicitar demo</button></div>
+              <button class="buttonStyle5">Solicitar demo</button>
+            </div>
           </ol>
         </div>
       </div>
     </main>
+  </div>
 
-    <footer>
-      <div class="d-flex justify-content-center">
-        <img id="whiteLogo" src="./Materiales/logo-senpai-blanco.svg" alt="" />
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-body">
+          <div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="d-flex justify-content-center align-items-center flex-column">
+            <img id="formLogo" src="/Materiales/logo-verde.png" alt="">
+            <h2>Ingresa a tu cuenta</h2>
+            <p>y empieza a conseguir resultados</p>
+            <label class="d-flex align-self-start" for="correo">Correo</label>
+            <input type="email" name="correo">
+            <label class="d-flex align-self-start" for="contraseña">Contraseña</label>
+            <input type="password" name="contraseña">
+          </div>
+          <div class="d-flex justify-content-between">
+            <div id="inputGap" class="d-flex align-items-center">
+              <input class="form-check-input" type="checkbox" id="rememberMe">
+              <label class="form-check-label" for="rememberMe">Recordarme</label>
+            </div>
+
+            <p class="mt-3"><a class="aColor" href="">Olvidé mi contraseña</a></p>
+
+          </div>
+          <button type="button" class="buttonStyle6 mt-3">Ingresar</button>
+          <div class="d-flex justify-content-center align-items-center m-3">
+            <p>Aún no tienes cuenta? <a class="aColor" href="">Registrarse</a></p>
+          </div>
+
+        </div>
+
       </div>
-      <ul class="customListFooter d-flex justify-content-center">
-        <li>Producto</li>
-        <li>Funcionalidades</li>
-        <li>Precios</li>
-        <li>Recursos</li>
-        <li>Carreras</li>
-        <li>Ayuda</li>
-        <li>Privacidad</li>
-      </ul>
-      <hr class="hrFooter" />
-      <div>
-        <p class="textFooter d-flex justify-content-center">
-          &copy 2022 Flex. Un producto ficticio de Senpai.
-        </p>
-      </div>
-    </footer>
+    </div>
+  </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-      crossorigin="anonymous"
-    ></script>
+  <footer>
+    <div class="d-flex justify-content-center">
+      <img id="whiteLogo" src="./Materiales/logo-senpai-blanco.svg" alt="" />
+    </div>
+    <ul class="customListFooter d-flex justify-content-center">
+      <li>Producto</li>
+      <li>Funcionalidades</li>
+      <li>Precios</li>
+      <li>Recursos</li>
+      <li>Carreras</li>
+      <li>Ayuda</li>
+      <li>Privacidad</li>
+    </ul>
+    <hr class="hrFooter" />
+    <div>
+      <p class="textFooter d-flex justify-content-center">
+        &copy 2022 Flex. Un producto ficticio de Senpai.
+      </p>
+    </div>
+  </footer>
 
-    <script>
-      const navbarToggle = document.getElementById("navbarToggle");
-      const navbarNavAltMarkup = document.getElementById("navbarNavAltMarkup");
 
-      navbarToggle.addEventListener("click", () => {
-        if (navbarNavAltMarkup.classList.contains("show")) {
-          navbarNavAltMarkup.classList.remove("show");
-        } else {
-          navbarNavAltMarkup.classList.add("show");
-        }
-      });
-    </script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+  <script>
+    const navbarToggle = document.getElementById("navbarToggle");
+    const navbarNavAltMarkup = document.getElementById("navbarNavAltMarkup");
+
+    navbarToggle.addEventListener("click", () => {
+      if (navbarNavAltMarkup.classList.contains("show")) {
+        navbarNavAltMarkup.classList.remove("show");
+      } else {
+        navbarNavAltMarkup.classList.add("show");
+      }
+    });
+  </script>
+
+</body>
+
 </html>
