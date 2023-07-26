@@ -19,7 +19,6 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Poppins:wght@200;400;500&display=swap"
     rel="stylesheet">
-
 </head>
 
 <body>
@@ -44,34 +43,32 @@
     </div>
   </nav>
   <div class="container-lg">
+    <article id="marginArticle" class="row">
+      <!-- <div class="d-flex justify-content-around flex-md-row flex-column"> -->
+      <div class="col-md-6">
+        <p class="priceGreen2">NUEVO</p>
 
-
-    <article id="marginArticle" class="">
-      <div class="d-flex justify-content-around">
-        <div class="col-6">
-          <p class="priceGreen2">NUEVO</p>
-
-          <h1>La plataforma para las empresas del futuro</h1>
-          <br />
-          <p>Productos pensados para los negocios del próximo siglo</p>
-          <br />
-          <div>
-            <button class="buttonStyle4">Solicitar Demo</button>
-            <button class="buttonStyle3">Registrarse</button>
-          </div>
-        </div>
-        <div id="rightContainer" class="col-6">
-          <div id="imgContainer">
-            <img id="headerJpg" src="/Materiales/header.jpg" alt="" />
-            <div id="imgDetails1">
-              <img src="/Materiales/circle3-yellow.svg" alt="" />
-            </div>
-            <div id="imgDetails2">
-              <img src="/Materiales/dots3-blue.svg" alt="" />
-            </div>
-          </div>
+        <h1>La plataforma para las empresas del futuro</h1>
+        <br />
+        <p>Productos pensados para los negocios del próximo siglo</p>
+        <br />
+        <div>
+          <button class="buttonStyle4">Solicitar Demo</button>
+          <button class="buttonStyle3">Registrarse</button>
         </div>
       </div>
+      <div class="col-md-6 my-5">
+        <div id="imgContainer">
+          <img id="headerJpg" src="/Materiales/header.jpg" alt="" class="img-fluid" />
+          <!-- <div id="imgDetails1">
+            <img src="/Materiales/circle3-yellow.svg" alt="" />
+          </div> -->
+          <!-- <div id="imgDetails2">
+            <img src="/Materiales/dots3-blue.svg" alt="" />
+          </div> -->
+        </div>
+      </div>
+      <!-- </div> -->
     </article>
 
     <main id="marginMain">
@@ -209,19 +206,21 @@
     </div>
   </div>
 
-  <footer>
+  <footer class="mt-4">
     <div class="d-flex justify-content-center">
       <img id="whiteLogo" src="./Materiales/logo-senpai-blanco.svg" alt="" />
     </div>
-    <ul class="customListFooter d-flex justify-content-center">
-      <li>Producto</li>
-      <li>Funcionalidades</li>
-      <li>Precios</li>
-      <li>Recursos</li>
-      <li>Carreras</li>
-      <li>Ayuda</li>
-      <li>Privacidad</li>
-    </ul>
+    <div class="col-lg-12">
+      <ul class="customListFooter d-flex justify-content-center">
+        <li><a class="aColor2" href="">Producto</a></li>
+        <li><a class="aColor2" href="">Funcionalidades</a></li>
+        <li><a class="aColor2" href="">Precios</a></li>
+        <li><a class="aColor2" href="">Recursos</a></li>
+        <li><a class="aColor2" href="">Carreras</a></li>
+        <li><a class="aColor2" href="">Ayuda</a></li>
+        <li><a class="aColor2" href="">Privacidad</a></li>
+      </ul>
+    </div>
     <hr class="hrFooter" />
     <div>
       <p class="textFooter d-flex justify-content-center">

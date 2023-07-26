@@ -20,9 +20,11 @@ h1 {
 }
 
 #optionNav {
-  position: absolute;
+  display: flex;
+  justify-content: center;
   left: 35%;
   gap: 15px;
+  align-items: center;
 }
 
 #navBarPos {
@@ -38,33 +40,33 @@ h1 {
   right: 20px;
 }
 
-#rightContainer {
+/* #rightContainer {
   position: relative;
   left: 100px;
-}
+} */
 
 #imgContainer {
-  position: absolute;
-  bottom: -100px;
+  position: relative;
+  width: auto;
 }
 
 #imgDetails1 {
   position: absolute;
-  bottom: 345px;
-  right: 420px;
+  bottom: 390px;
+  left: -60px;
 }
 
 #imgDetails2 {
   position: absolute;
-  top: 360px;
-  left: 380px;
+  bottom: -35px;
+  left: 480px;
 }
 
-#headerJpg {
+/* #headerJpg {
   width: 500px;
   margin-left: auto;
 }
-
+ */
 .buttonStyle {
   border-radius: 5px;
   background-color: #2ad167;
@@ -83,6 +85,9 @@ h1 {
   color: black;
   font-family: 'Barlow Semi Condensed', sans-serif;
   font-family: 'Poppins', sans-serif;
+  border: solid 1px rgb(188, 180, 180);
+  width: 100px;
+  height: 35px;
 }
 
 .buttonStyle3 {
@@ -155,7 +160,7 @@ h1 {
 footer {
   background-color: #2a3342;
   height: 300px;
-  width: 100%;
+  width: auto;
 }
 
 .customListFooter li {
@@ -298,4 +303,54 @@ label {
 .aColor {
   text-decoration: none;
   color: #2ad167;
+}
+
+.aColor2 {
+  text-decoration: none;
+  color: rgb(172, 165, 165);
+}
+
+@media (max-width: 767px) {
+  #marginMain {
+    margin-top: 0;
+  }
+
+  .customListFooter {
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #btnPosition {
+    display: flex;
+    justify-content: space-evenly;
+    /* gap: 15px; */
+    right: 20px;
+    flex-direction: column;
+    margin-top: 18px;
+    gap: 33px;
+  }
+
+  #optionNav {
+    display: flex;
+    justify-content: flex-start;
+    /* left: 35%; */
+    /* gap: 15px; */
+    /*  align-items: flex-end; */
+    margin-right: 20px;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 18px;
+  }
+
+  .navbar-nav {
+    margin-top: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  #price {
+    gap: 25px;
+  }
 }
